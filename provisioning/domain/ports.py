@@ -1,0 +1,16 @@
+from abc import ABC,abstractmethod
+from pathlib import Path
+from .models import DatabaseRequest,DatabaseReference,BackupResult
+
+class DatabaseProvisioner(ABC):
+    @property
+    @abstractmethod
+    def engine_name(self)->str: ...
+    @abstractmethod
+    def provision(self,request:DatabaseRequest)->DatabaseReference: ...
+    @abstractmethod
+    def health_check(self,database:DatabaseReference)->bool: ...
+    @abstractmethod
+    def backup(self,database:DatabaseReference,directory:Path)->BackupResult: ...
+    @abstractmethod
+    def delete(self,database:DatabaseReference)->None: ...

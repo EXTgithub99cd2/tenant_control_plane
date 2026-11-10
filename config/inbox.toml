@@ -1,0 +1,8 @@
+[inbox]
+# Relative paths are resolved from the application folder.
+root = "inbox"
+metadata_database = "inbox.db"
+max_upload_bytes = 104857600
+chunk_size_bytes = 1048576
+allowed_extensions = [".csv", ".xlsx"]
+show_storage_reference = true

@@ -1,0 +1,4 @@
+[import]
+batch_size = 500
+default_auto_process_allowed = true
+physical_preview_rows = 200

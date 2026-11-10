@@ -1,0 +1,8 @@
+[inspection]
+preview_rows = 100
+type_inference_sample_rows = 1000
+maximum_columns = 500
+maximum_worksheets = 50
+csv_encoding_candidates = ["utf-8-sig", "utf-8", "cp1252", "latin-1"]
+csv_delimiters = [",", ";", "\t", "|"]
+empty_header_prefix = "column"
